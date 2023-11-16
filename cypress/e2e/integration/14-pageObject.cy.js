@@ -32,6 +32,6 @@ describe('Login page test', () => {
         
         loginPage.userLogin(this.username, this.password)
 
-        loginPage.getSuccessMessage().should('not.be.visible')
+        loginPage.getSuccessMessage().should('be.visible')
     })
 })
