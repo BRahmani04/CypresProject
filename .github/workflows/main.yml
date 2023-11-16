@@ -11,13 +11,20 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-             browser: chrome
-             headless: true
-             spec: cypress/e2e/spec1.cy.js
-              
+            # browser: chrome
+            # headless: true
+            # spec: cypress/e2e/spec1.cy.js
+              command: npm run test:smoke
 
-      - name: Artifacts
-        uses: actions/upload-artifact@v3
+    #   - name: Artifacts
+    #     uses: actions/upload-artifact@v3
+    #     with:
+    #         name: reports
+    #         path: cypress/reports/html/index.html
+    #         if-no-files-found: ignore # 'warn' or 'error' are also available, defaults to `warn`
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-            name: mochawesome-report
-            path: cypress/reports/html/index.html
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
