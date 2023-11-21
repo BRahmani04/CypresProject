@@ -4,8 +4,8 @@ describe('Timeout', () => {
 
     it('Explicit or Inline Timeouts', () => {
 
-        cy.visit('https://techglobal-training.com/frontend');
-        cy.clickCard('Html Elements');
+        cy.visit('https://techglobal-training.com/frontend')
+        cy.clickCard('Html Elements')
 
         // cy.get('#randomName', {timeout: 8000})
 

@@ -1,6 +1,6 @@
 /// <reference types='cypress' />
 
-import LoginPage  from "../../Pages/LoginPage"
+import LoginPage  from '../../Pages/LoginPage'
 
 describe('Login page test', () => {
         beforeEach(() => {
@@ -26,8 +26,8 @@ describe('Login page test', () => {
 
     it('Login with POM', {tags:['@smoke', '@regression']}, function () {
 
-        cy.visit("https://techglobal-training.com/frontend");
-        cy.clickCard("Project - Login Function");
+        cy.visit('https://techglobal-training.com/frontend')
+        cy.clickCard('Project - Login Function')
 
         
         loginPage.userLogin(this.username, this.password)

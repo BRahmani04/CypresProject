@@ -25,9 +25,9 @@ class LoginPage {
         return cy.get('#email')
     }
 
-    getSuccessMessage(){
+   getSuccessMessage(){
         return cy.get('#success_lgn')
-    }
+    } 
 
     getLogOutButton() {
         return cy.get('#logout')

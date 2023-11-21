@@ -3,8 +3,8 @@
 describe('Custom commands', () => {
 
     it('Parent Command', () => {
-        cy.visit('https://techglobal-training.com/frontend');
-        cy.clickCard('Html Elements');
+        cy.visit('https://techglobal-training.com/frontend')
+        cy.clickCard('Html Elements')
 
         cy.login('Tech', 'Global')
 
@@ -14,8 +14,8 @@ describe('Custom commands', () => {
     })
 
     it('Child Command', () => {
-        cy.visit('https://techglobal-training.com/frontend');
-        cy.clickCard('Html Elements');
+        cy.visit('https://techglobal-training.com/frontend')
+        cy.clickCard('Html Elements')
 
         cy.get('#main_heading').then(($el) => {
             cy.log($el.text())

@@ -1,6 +1,6 @@
 /// <reference types='cypress' />
 
-import LoginPage from "../../Pages/LoginPage"
+import LoginPage from '../../Pages/LoginPage'
 const login = new LoginPage()
 describe('Project 02', () => {
 
@@ -40,7 +40,7 @@ describe('Project 02', () => {
 
         login.getForgotPassword().click()
         login.getResetPassword().should('be.visible').next().should('be.visible')
-        login.enterEmail().parent().should('have.text', "Enter your email address and we'll send you a link to reset your password. ").and('be.visible')
+        login.enterEmail().parent().should('have.text', 'Enter your email address and we\'ll send you a link to reset your password. ').and('be.visible')
         .next().should('be.visible').and('have.text', 'SUBMIT')
         cy.get('#submit').should('be.enabled')
 

@@ -4,9 +4,9 @@ describe('File Download & File Upload', () => {
 
 
     it('File Download', () => {
-    cy.visit("https://techglobal-training.com/frontend");
+    cy.visit('https://techglobal-training.com/frontend')
 
-    cy.clickCard("File Download & Upload");
+    cy.clickCard('File Download & Upload')
 
     cy.get('#file_download').click()
 

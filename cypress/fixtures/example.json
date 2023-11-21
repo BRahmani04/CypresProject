@@ -4,5 +4,8 @@
   "body": "Fixtures are a great way to mock data for responses to routes",
   "username": "TechGlobal",
   "password": "Test1234",
-  "headers": ["Rank", "Company", "Employees", "Country"]
+  "headers": ["Rank", "Company", "Employees", "Country"],
+  "cabinClass": ["Premium Economy", "Business", "First"],
+  "date": ["1", "Adult (16-64)"],
+  "citys": ["Illinois", "Florida", "California", "New York", "Texas"]
 }

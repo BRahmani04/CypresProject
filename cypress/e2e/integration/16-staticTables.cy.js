@@ -1,5 +1,5 @@
 
-import TablesPage from "../../Pages/TablesPage"
+import TablesPage from '../../Pages/TablesPage'
 
 describe('Static Tables', () => {
 
@@ -18,7 +18,7 @@ describe('Static Tables', () => {
 
   const tablesPage = new TablesPage()
 
-  it("Verify the headers of the table", function() {
+  it('Verify the headers of the table', function() {
     
     tablesPage.getCompanyTableHeaders().find('th').each(($txt, index) => {
         cy.wrap($txt).should('have.text', this.headers[index])

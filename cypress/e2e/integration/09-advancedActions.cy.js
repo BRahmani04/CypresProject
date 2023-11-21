@@ -1,10 +1,10 @@
 /// <reference types="cypress" />
 
-describe("Keyboard & Mouse Actions", () => {
+describe('Keyboard & Mouse Actions', () => {
 
-    it("Keyboard Actions", () => {
-      cy.visit("https://techglobal-training.com/frontend");
-      cy.clickCard("Html Elements");
+    it('Keyboard Actions', () => {
+      cy.visit('https://techglobal-training.com/frontend')
+      cy.clickCard('Html Elements')
   
   
       // cy.get('#dropdown-button').trigger('mouseover')
@@ -20,13 +20,13 @@ describe("Keyboard & Mouse Actions", () => {
       .realPress('R')
       
   
-    });
+    })
 
     it('Click, Right Click and Double Click', () => {
 
-      cy.visit("https://techglobal-training.com/frontend");
+      cy.visit('https://techglobal-training.com/frontend')
 
-      cy.clickCard("Actions");
+      cy.clickCard('Actions')
 
  /**
    * Go to https://techglobal-training.com/frontend/
@@ -57,12 +57,12 @@ describe("Keyboard & Mouse Actions", () => {
       * Verify that the first web element "Drag me" is successfully dropped into the second web element "Drop Here"
       * Verify that a message appears next to the  web element stating, "An element dropped here!"
       */
-    cy.visit("https://techglobal-training.com/frontend");
+    cy.visit('https://techglobal-training.com/frontend')
 
-    cy.clickCard("Actions");
+    cy.clickCard('Actions')
     
     cy.get('#drag_element').drag('#drop_element')
     cy.get('#drag_and_drop_result').should('have.text', 'An element dropped here!')
     
     })
-  });
+  })

@@ -65,17 +65,17 @@ describe('Practices', () => {
    * 5. Validate "Cypress" and "Selenium Webdriver" texts are visible
    * 6. Validate their texts are equal "Cypress" and "Selenium Webdriver"
    */
-         cy.get("#ordered_list")
+         cy.get('#ordered_list')
          .prev()
-         .should("be.visible")
-         .and("have.text", "Ordered Lists")
+         .should('be.visible')
+         .and('have.text', 'Ordered Lists')
          .next()
-         .find("#ordered_list_item1")
-         .should("be.visible")
-         .and("have.text", "Cypress")
+         .find('#ordered_list_item1')
+         .should('be.visible')
+         .and('have.text', 'Cypress')
          .next()
-         .should("be.visible")
-         .and("have.text", "Selenium Webdriver");
+         .should('be.visible')
+         .and('have.text', 'Selenium Webdriver')
     })
 
     it('Practice 04', () => {
@@ -149,7 +149,7 @@ describe('Practices', () => {
         
         const product = 'MacBook Pro 13'
         const color = 'Green'
-        const shippingOption = "Delivery"
+        const shippingOption = 'Delivery'
         const expectedMessage = shippingOption === 'Delivery' 
         ? `Your ${color} ${product} will be delivered to you.`
         : `Your ${color} ${product} is ready to be picked up.`

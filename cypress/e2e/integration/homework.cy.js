@@ -16,18 +16,18 @@ describe('Project 01', () => {
     
    it('Test Case 02 - Validate the Full name input box', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
-        cy.get(':nth-child(1) > .control > .input').should('be.visible').and('have.attr', 'required');
-        cy.get('[for^=name]').should('have.text', 'Full name *');
-        cy.get(':nth-child(1) > .control > .input').should('have.attr', 'placeholder', 'Enter your full name');
+        cy.get(':nth-child(1) > .control > .input').should('be.visible').and('have.attr', 'required')
+        cy.get('[for^=name]').should('have.text', 'Full name *')
+        cy.get(':nth-child(1) > .control > .input').should('have.attr', 'placeholder', 'Enter your full name')
 
 
-   });
+   })
 
    it.only('Test Case 03 - Validate the Gender radio button', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
     
     cy.get('.control > .label').should('have.text', 'Gender *').and('not.have.attr', 'required')
@@ -47,42 +47,42 @@ describe('Project 01', () => {
 
    it('Test Case 04 - Validate the Address input box', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
     cy.get(':nth-child(3) > .control > .input').should('be.visible').and('not.have.attr', 'required')
     cy.contains('label', 'Address').should('have.text', 'Address')
-    cy.get(':nth-child(3) > .control > .input').should('have.attr', 'placeholder', 'Enter your address');
+    cy.get(':nth-child(3) > .control > .input').should('have.attr', 'placeholder', 'Enter your address')
    })
 
    it('Test Case 05 - Validate the Email input box', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
     cy.get(':nth-child(4) > .control > .input').should('be.visible').and('have.attr', 'required')
     cy.contains('label', 'Email').should('have.text', 'Email *')
-    cy.get(':nth-child(4) > .control > .input').should('have.attr', 'placeholder', 'Enter your email');
+    cy.get(':nth-child(4) > .control > .input').should('have.attr', 'placeholder', 'Enter your email')
    })
 
    it('Test Case 06 - Validate the Phone input box', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
     cy.get(':nth-child(5) > .control > .input').should('be.visible').and('not.have.attr', 'required')
     cy.contains('label', 'Phone').should('have.text', 'Phone')
-    cy.get(':nth-child(5) > .control > .input').should('have.attr', 'placeholder', 'Enter your phone number');
+    cy.get(':nth-child(5) > .control > .input').should('have.attr', 'placeholder', 'Enter your phone number')
    })
 
    it('Test Case 07 - Validate the Message text area', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
     cy.get('.textarea').should('be.visible').and('not.have.attr', 'required')
     cy.contains('label', 'Message').should('have.text', 'Message')
-    cy.get('.textarea').should('have.attr', 'placeholder', 'Type your message here...');
+    cy.get('.textarea').should('have.attr', 'placeholder', 'Type your message here...')
 
    })
 
    it('Test Case 08 - Validate the Consent checkbox', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
     cy.get('.checkbox').should('have.text', ' I give my consent to be contacted.')
     cy.get('.checkbox > input').should('have.attr', 'required')
@@ -92,7 +92,7 @@ describe('Project 01', () => {
 
    it('Test Case 09 - Validate the SUBMIT button', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
     cy.get('.control > .button').should('be.visible').and('be.enabled').and('have.text', 'SUBMIT')
 
@@ -100,7 +100,7 @@ describe('Project 01', () => {
 
    it('Test Case 10 - Validate the form submission', () => {
 
-    cy.visit('https://techglobal-training.com/frontend/project-1');
+    cy.visit('https://techglobal-training.com/frontend/project-1')
 
     const info = ['Bajram Rahmani', '111 Chicago Il 60110', 'br@gmail.com', '907-231-1234', 'I like TechGlobal']
 

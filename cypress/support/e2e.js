@@ -14,15 +14,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands';
-import'cypress-real-events';
-import '@4tw/cypress-drag-drop';
-import 'cypress-mochawesome-reporter/register';
+import './commands'
+import'cypress-real-events'
+import '@4tw/cypress-drag-drop'
+import 'cypress-mochawesome-reporter/register'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 const registerCypressGrep = require('@cypress/grep')
 registerCypressGrep()
 
 beforeEach(() => {
-    cy.visit('https://techglobal-training.com/frontend/tables');
+    cy.visit('https://techglobal-training.com/frontend/project-3')
 })

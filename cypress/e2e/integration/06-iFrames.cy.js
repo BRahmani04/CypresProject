@@ -1,11 +1,11 @@
-describe("iFrames in Cypress", () => {
+describe('iFrames in Cypress', () => {
 
     /**
      * Go to https://techglobal-training.com/frontend/
      * Click on the "IFrames" card
      * Validate the "Please fill out your information below" text
      */
-    it("iFrames", () => {
+    it('iFrames', () => {
       cy.visit('https://techglobal-training.com/frontend')
       cy.clickCard('IFrames')
   
@@ -15,7 +15,7 @@ describe("iFrames in Cypress", () => {
       .should('not.be.empty')
       .find('#name_form > p').should('have.text', 'Please fill out your information below')
   
-    });
+    })
   
     /**
      * Go to https://techglobal-training.com/frontend/
@@ -43,4 +43,4 @@ describe("iFrames in Cypress", () => {
       cy.get('#result').should('have.text', `You entered: ${name.join(' ')}`)
   
     })
-  });
+  })

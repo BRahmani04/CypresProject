@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-const exp = require("constants");
+
 
 describe('Alerts', () => {
 
     it('Handling the Warning and Confirmation Alerts', () => {
-        cy.visit("https://techglobal-training.com/frontend");
+        cy.visit('https://techglobal-training.com/frontend')
 
-        cy.clickCard("Alerts");
+        cy.clickCard('Alerts')
 
         cy.get('#warning_alert').click()
 
@@ -23,9 +23,9 @@ describe('Alerts', () => {
     })
 
     it('Handling the Confirmaiton Alert', () => {
-        cy.visit("https://techglobal-training.com/frontend");
+        cy.visit('https://techglobal-training.com/frontend')
 
-        cy.clickCard("Alerts");
+        cy.clickCard('Alerts')
         
      /*   * CONFIRMATION ALERT
    * 1. Go to https://techglobal-training.com/frontend/
@@ -50,9 +50,9 @@ describe('Alerts', () => {
 })
 
     it.only('Handeling alerts - Prompt alert', () => {
-        cy.visit("https://techglobal-training.com/frontend");
+        cy.visit('https://techglobal-training.com/frontend')
 
-        cy.clickCard("Alerts");
+        cy.clickCard('Alerts')
 
         
 
